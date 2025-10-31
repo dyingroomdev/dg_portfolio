@@ -1,4 +1,4 @@
-import { Github, Twitter } from 'lucide-react'
+import { Github, Music, Twitter } from 'lucide-react'
 import { siteConfig } from '../lib/config'
 
 export default function Footer() {
@@ -38,10 +38,16 @@ export default function Footer() {
             >
               <Twitter className="w-5 h-5" />
             </a>
-
+            <a
+              href={siteConfig.socials.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-tinted-white/60 hover:text-neon-green transition-colors duration-300"
+              aria-label="YouTube"
+            >
+              <Music className="w-5 h-5" />
+            </a>
           </div>
-
-
         </div>
       </div>
     </footer>

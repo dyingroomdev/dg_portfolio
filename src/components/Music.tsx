@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Youtube } from 'lucide-react'
+import { ExternalLink, Play, Youtube } from 'lucide-react'
 import { siteConfig } from '../lib/config'
 
 export default function Music() {
@@ -50,6 +50,19 @@ export default function Music() {
                   className="w-full h-full"
                 />
               </div>
+              <div className="flex items-center justify-between p-4 border-t border-emerald/20 bg-rich-black/60">
+                <span className="text-sm text-tinted-white/70">Watch on YouTube</span>
+                <a
+                  href={track.embedUrl.replace('/embed/', '/watch?v=')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-neon-green hover:text-tinted-white transition-colors duration-300"
+                  aria-label={`Open ${track.title} on YouTube`}
+                >
+                  <Play className="w-4 h-4" />
+                  <span className="text-xs font-semibold uppercase tracking-wide">Play</span>
+                </a>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -70,6 +83,7 @@ export default function Music() {
             >
               Watch on YouTube
               <Youtube className="w-4 h-4" />
+              <ExternalLink className="w-4 h-4" />
             </a>
           </div>
         </motion.div>
