@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-rich-black text-tinted-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 10px #00FF7F;
+  }
+  
+  .neon-border {
+    border: 1px solid #00FF7F;
+    box-shadow: 0 0 10px rgba(0, 255, 127, 0.3);
+  }
+  
+  .grid-bg {
+    background-image: 
+      linear-gradient(rgba(0, 255, 127, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 127, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
