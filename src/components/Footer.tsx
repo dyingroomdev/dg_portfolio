@@ -1,4 +1,4 @@
-import { Github, Twitter, Music } from 'lucide-react'
+import { Github, Twitter } from 'lucide-react'
 import { siteConfig } from '../lib/config'
 
 export default function Footer() {

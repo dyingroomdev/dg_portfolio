@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Play, ExternalLink, Youtube } from 'lucide-react'
+import { Youtube } from 'lucide-react'
 import { siteConfig } from '../lib/config'
 
 export default function Music() {

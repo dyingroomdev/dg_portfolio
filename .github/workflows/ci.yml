@@ -49,8 +49,8 @@ jobs:
     
     - name: Test Docker container
       run: |
-        docker run -d -p 8102:8102 --name test-container dyingroom-portfolio:latest
+        docker run -d -p 8103:8103 --name test-container dyingroom-portfolio:latest
         sleep 10
-        curl -f http://localhost:8102 || exit 1
+        curl -f http://localhost:8103 || exit 1
         docker stop test-container
         docker rm test-container

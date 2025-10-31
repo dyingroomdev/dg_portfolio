@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-The application will be available at `http://localhost:8102`
+The application will be available at `http://localhost:8103`
 
 ### Available Scripts
 
@@ -59,7 +59,7 @@ The application will be available at `http://localhost:8102`
 docker build -t dyingroom-portfolio .
 
 # Run container
-docker run -p 8102:8102 dyingroom-portfolio
+docker run -p 8103:8103 dyingroom-portfolio
 ```
 
 ## 🌍 Environment Variables
